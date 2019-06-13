@@ -45,7 +45,7 @@ PRODUCT_COPY_FILES += \
  vendor/amazon/douglas/proprietary/lib/hw/bluetooth.default.so:system/lib/hw/bluetooth.default.so \
  vendor/amazon/douglas/proprietary/lib/hw/camera.mt8163.so:system/lib/hw/camera.mt8163.so \
  vendor/amazon/douglas/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
- vendor/amazon/douglas/proprietary/lib/hw/gralloc.mt8163.so:system/lib/hw/gralloc.mt8163.so \
+ vendor/amazon/douglas/proprietary/lib/hw/gralloc.mt8163.mali.so:system/lib/hw/gralloc.mt8163.mali.so \
  vendor/amazon/douglas/proprietary/lib/hw/hwcomposer.mt8163.so:system/lib/hw/hwcomposer.mt8163.so \
  vendor/amazon/douglas/proprietary/lib/hw/keystore.default.so:system/lib/hw/keystore.default.so \
  vendor/amazon/douglas/proprietary/lib/hw/keystore.mt8163.so:system/lib/hw/keystore.mt8163.so \
