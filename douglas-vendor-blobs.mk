@@ -118,7 +118,6 @@ PRODUCT_COPY_FILES += \
  vendor/amazon/douglas/proprietary/lib/libfile_op.so:system/lib/libfile_op.so \
  vendor/amazon/douglas/proprietary/lib/libged.so:system/lib/libged.so \
  vendor/amazon/douglas/proprietary/lib/libgpu_aux.so:system/lib/libgpu_aux.so \
- vendor/amazon/douglas/proprietary/lib/libgralloc_extra.so:system/lib/libgralloc_extra.so \
  vendor/amazon/douglas/proprietary/lib/libgui_ext.so:system/lib/libgui_ext.so \
  vendor/amazon/douglas/proprietary/lib/libhal_effects.so:system/lib/libhal_effects.so \
  vendor/amazon/douglas/proprietary/lib/libhwm.so:system/lib/libhwm.so \
@@ -251,7 +250,6 @@ PRODUCT_COPY_FILES += \
  vendor/amazon/douglas/proprietary/lib64/libfile_op.so:system/lib64/libfile_op.so \
  vendor/amazon/douglas/proprietary/lib64/libged.so:system/lib64/libged.so \
  vendor/amazon/douglas/proprietary/lib64/libgpu_aux.so:system/lib64/libgpu_aux.so \
- vendor/amazon/douglas/proprietary/lib64/libgralloc_extra.so:system/lib64/libgralloc_extra.so \
  vendor/amazon/douglas/proprietary/lib64/libgui_ext.so:system/lib64/libgui_ext.so \
  vendor/amazon/douglas/proprietary/lib64/libhal_effects.so:system/lib64/libhal_effects.so \
  vendor/amazon/douglas/proprietary/lib64/libhwm.so:system/lib64/libhwm.so \
