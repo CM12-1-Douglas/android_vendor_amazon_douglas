@@ -35,6 +35,7 @@ PRODUCT_COPY_FILES += \
  vendor/amazon/douglas/proprietary/etc/.tp/thermal.conf:system/etc/.tp/thermal.conf \
  vendor/amazon/douglas/proprietary/etc/.tp/thermal.off.conf:system/etc/.tp/thermal.off.conf \
  vendor/amazon/douglas/proprietary/etc/audio_policy.conf:system/etc/audio_policy.conf \
+ vendor/amazon/douglas/proprietary/etc/hotknot.cfg:system/etc/hotknot.cfg \
  vendor/amazon/douglas/proprietary/etc/mtk_omx_core.cfg:system/etc/mtk_omx_core.cfg \
  vendor/amazon/douglas/proprietary/etc/mtklog-config.prop:system/etc/mtklog-config.prop \
  vendor/amazon/douglas/proprietary/etc/firmware/WMT_SOC.cfg:system/etc/firmware/WMT_SOC.cfg \
@@ -46,8 +47,6 @@ PRODUCT_COPY_FILES += \
  vendor/amazon/douglas/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
  vendor/amazon/douglas/proprietary/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
  vendor/amazon/douglas/proprietary/lib/lib3a.so:system/lib/lib3a.so \
- vendor/amazon/douglas/proprietary/lib/libaal.so:system/lib/libaal.so \
- vendor/amazon/douglas/proprietary/lib/libaal_cust.so:system/lib/libaal_cust.so \
  vendor/amazon/douglas/proprietary/lib/libJpgDecPipe.so:system/lib/libJpgDecPipe.so \
  vendor/amazon/douglas/proprietary/lib/libJpgEncPipe.so:system/lib/libJpgEncPipe.so \
  vendor/amazon/douglas/proprietary/lib/libMtkOmxAIVPlayer.so:system/lib/libMtkOmxAIVPlayer.so \
@@ -60,6 +59,8 @@ PRODUCT_COPY_FILES += \
  vendor/amazon/douglas/proprietary/lib/lib_uree_mtk_modular_drm.so:system/lib/lib_uree_mtk_modular_drm.so \
  vendor/amazon/douglas/proprietary/lib/lib_uree_mtk_video_secure_al.so:system/lib/lib_uree_mtk_video_secure_al.so \
  vendor/amazon/douglas/proprietary/lib/libacdk.so:system/lib/libacdk.so \
+ vendor/amazon/douglas/proprietary/lib/libaal.so:system/lib/libaal.so \
+ vendor/amazon/douglas/proprietary/lib/libaal_cust.so:system/lib/libaal_cust.so \
  vendor/amazon/douglas/proprietary/lib/libaed.so:system/lib/libaed.so \
  vendor/amazon/douglas/proprietary/lib/libamazon_remotes.so:system/lib/libamazon_remotes.so \
  vendor/amazon/douglas/proprietary/lib/libamazoninputservice.so:system/lib/libamazoninputservice.so \
@@ -68,20 +69,17 @@ PRODUCT_COPY_FILES += \
  vendor/amazon/douglas/proprietary/lib/libcamdrv_FrmB.so:system/lib/libcamdrv_FrmB.so \
  vendor/amazon/douglas/proprietary/lib/libimageio_FrmB.so:system/lib/libimageio_FrmB.so \
  vendor/amazon/douglas/proprietary/lib/libimageio_plat_drv_FrmB.so:system/lib/libimageio_plat_drv_FrmB.so \
+ vendor/amazon/douglas/proprietary/lib/libaudiodcrflt.so:system/lib/libaudiodcrflt.so \
+ vendor/amazon/douglas/proprietary/lib/libaudiosetting.so:system/lib/libaudiosetting.so \
  vendor/amazon/douglas/proprietary/lib/libblisrc.so:system/lib/libblisrc.so \
  vendor/amazon/douglas/proprietary/lib/libcvsd_mtk.so:system/lib/libcvsd_mtk.so \
  vendor/amazon/douglas/proprietary/lib/libmsbc_mtk.so:system/lib/libmsbc_mtk.so \
  vendor/amazon/douglas/proprietary/lib/libcjson.so:system/lib/libcjson.so \
- vendor/amazon/douglas/proprietary/lib/libaudiodcrflt.so:system/lib/libaudiodcrflt.so \
- vendor/amazon/douglas/proprietary/lib/libaudiosetting.so:system/lib/libaudiosetting.so \
+ vendor/amazon/douglas/proprietary/lib/libasp.so:system/lib/libasp.so \
  vendor/amazon/douglas/proprietary/lib/libaudiocompensationfilter.so:system/lib/libaudiocompensationfilter.so \
  vendor/amazon/douglas/proprietary/lib/libaudiocomponentengine.so:system/lib/libaudiocomponentengine.so \
  vendor/amazon/douglas/proprietary/lib/libaudiocustparam.so:system/lib/libaudiocustparam.so \
  vendor/amazon/douglas/proprietary/lib/libaudiostream.so:system/lib/libaudiostream.so \
- vendor/amazon/douglas/proprietary/lib/libaudiostream_jni.so:system/lib/libaudiostream_jni.so \
- vendor/amazon/douglas/proprietary/lib/libaudiopolicymanagerdefault.so:system/lib/libaudiopolicymanagerdefault.so \
- vendor/amazon/douglas/proprietary/lib/libaudiopolicyservice.so:system/lib/libaudiopolicyservice.so \
- vendor/amazon/douglas/proprietary/lib/libaudioutils.so:system/lib/libaudioutils.so \
  vendor/amazon/douglas/proprietary/lib/libbessound_hd_mtk.so:system/lib/libbessound_hd_mtk.so \
  vendor/amazon/douglas/proprietary/lib/libblisrc32.so:system/lib/libblisrc32.so \
  vendor/amazon/douglas/proprietary/lib/libbluetooth_hw_test.so:system/lib/libbluetooth_hw_test.so \
@@ -201,28 +199,23 @@ PRODUCT_COPY_FILES += \
  vendor/amazon/douglas/proprietary/lib/modules/xt_physdev.ko:system/lib/modules/xt_physdev.ko \
  vendor/amazon/douglas/proprietary/lib/soundfx/libaudiofx.so:system/lib/soundfx/libaudiofx.so \
  vendor/amazon/douglas/proprietary/lib64/lib3a.so:system/lib64/lib3a.so \
- vendor/amazon/douglas/proprietary/lib64/libaal.so:system/lib64/libaal.so \
- vendor/amazon/douglas/proprietary/lib64/libaal_cust.so:system/lib64/libaal_cust.so \
  vendor/amazon/douglas/proprietary/lib64/libJpgEncPipe.so:system/lib64/libJpgEncPipe.so \
  vendor/amazon/douglas/proprietary/lib64/libMtkOmxCore.so:system/lib64/libMtkOmxCore.so \
  vendor/amazon/douglas/proprietary/lib64/lib_uree_mtk_crypto.so:system/lib64/lib_uree_mtk_crypto.so \
  vendor/amazon/douglas/proprietary/lib64/lib_uree_mtk_modular_drm.so:system/lib64/lib_uree_mtk_modular_drm.so \
  vendor/amazon/douglas/proprietary/lib64/lib_uree_mtk_video_secure_al.so:system/lib64/lib_uree_mtk_video_secure_al.so \
  vendor/amazon/douglas/proprietary/lib64/libacdk.so:system/lib64/libacdk.so \
+ vendor/amazon/douglas/proprietary/lib64/libaal.so:system/lib64/libaal.so \
+ vendor/amazon/douglas/proprietary/lib64/libaal_cust.so:system/lib64/libaal_cust.so \
  vendor/amazon/douglas/proprietary/lib64/libaed.so:system/lib64/libaed.so \
  vendor/amazon/douglas/proprietary/lib64/libamazon_remotes.so:system/lib64/libamazon_remotes.so \
  vendor/amazon/douglas/proprietary/lib64/libamazoninputservice.so:system/lib64/libamazoninputservice.so \
  vendor/amazon/douglas/proprietary/lib64/libamazonwifiservice.so:system/lib64/libamazonwifiservice.so \
+ vendor/amazon/douglas/proprietary/lib64/libasp.so:system/lib64/libasp.so \
  vendor/amazon/douglas/proprietary/lib64/libaudiocompensationfilter.so:system/lib64/libaudiocompensationfilter.so \
  vendor/amazon/douglas/proprietary/lib64/libaudiocomponentengine.so:system/lib64/libaudiocomponentengine.so \
  vendor/amazon/douglas/proprietary/lib64/libaudiocustparam.so:system/lib64/libaudiocustparam.so \
  vendor/amazon/douglas/proprietary/lib64/libaudiostream.so:system/lib64/libaudiostream.so \
- vendor/amazon/douglas/proprietary/lib64/libaudiostream_jni.so:system/lib64/libaudiostream_jni.so \
- vendor/amazon/douglas/proprietary/lib64/libaudiodcrflt.so:system/lib64/libaudiodcrflt.so \
- vendor/amazon/douglas/proprietary/lib64/libaudiosetting.so:system/lib64/libaudiosetting.so \
- vendor/amazon/douglas/proprietary/lib64/libaudiopolicymanagerdefault.so:system/lib64/libaudiopolicymanagerdefault.so \
- vendor/amazon/douglas/proprietary/lib64/libaudiopolicyservice.so:system/lib64/libaudiopolicyservice.so \
- vendor/amazon/douglas/proprietary/lib64/libaudioutils.so:system/lib64/libaudioutils.so \
  vendor/amazon/douglas/proprietary/lib64/libbessound_hd_mtk.so:system/lib64/libbessound_hd_mtk.so \
  vendor/amazon/douglas/proprietary/lib64/libblisrc32.so:system/lib64/libblisrc32.so \
  vendor/amazon/douglas/proprietary/lib64/libbluetooth_hw_test.so:system/lib64/libbluetooth_hw_test.so \
@@ -264,6 +257,8 @@ PRODUCT_COPY_FILES += \
  vendor/amazon/douglas/proprietary/lib64/libcamdrv_FrmB.so:system/lib64/libcamdrv_FrmB.so \
  vendor/amazon/douglas/proprietary/lib64/libimageio_FrmB.so:system/lib64/libimageio_FrmB.so \
  vendor/amazon/douglas/proprietary/lib64/libimageio_plat_drv_FrmB.so:system/lib64/libimageio_plat_drv_FrmB.so \
+ vendor/amazon/douglas/proprietary/lib64/libaudiodcrflt.so:system/lib64/libaudiodcrflt.so \
+ vendor/amazon/douglas/proprietary/lib64/libaudiosetting.so:system/lib64/libaudiosetting.so \
  vendor/amazon/douglas/proprietary/lib64/libblisrc.so:system/lib64/libblisrc.so \
  vendor/amazon/douglas/proprietary/lib64/libcvsd_mtk.so:system/lib64/libcvsd_mtk.so \
  vendor/amazon/douglas/proprietary/lib64/libmsbc_mtk.so:system/lib64/libmsbc_mtk.so \
