@@ -71,6 +71,12 @@ PRODUCT_COPY_FILES += \
  vendor/amazon/douglas/proprietary/lib/libimageio_plat_drv_FrmB.so:system/lib/libimageio_plat_drv_FrmB.so \
  vendor/amazon/douglas/proprietary/lib/libaudiodcrflt.so:system/lib/libaudiodcrflt.so \
  vendor/amazon/douglas/proprietary/lib/libaudiosetting.so:system/lib/libaudiosetting.so \
+ vendor/amazon/douglas/proprietary/lib/libaudio-resampler.so:system/lib/libaudio-resampler.so \
+ vendor/amazon/douglas/proprietary/lib/libaudiopolicymanager.so:system/lib/libaudiopolicymanager.so \
+ vendor/amazon/douglas/proprietary/lib/libaudiopolicymanagerdefault.so:system/lib/libaudiopolicymanagerdefault.so \
+ vendor/amazon/douglas/proprietary/lib/libaudiopolicyservice.so:system/lib/libaudiopolicyservice.so \
+ vendor/amazon/douglas/proprietary/lib/libaudiostream_jni.so:system/lib/libaudiostream_jni.so \
+ vendor/amazon/douglas/proprietary/lib/libaudioutils.so:system/lib/libaudioutils.so \
  vendor/amazon/douglas/proprietary/lib/libblisrc.so:system/lib/libblisrc.so \
  vendor/amazon/douglas/proprietary/lib/libcvsd_mtk.so:system/lib/libcvsd_mtk.so \
  vendor/amazon/douglas/proprietary/lib/libmsbc_mtk.so:system/lib/libmsbc_mtk.so \
@@ -216,6 +222,12 @@ PRODUCT_COPY_FILES += \
  vendor/amazon/douglas/proprietary/lib64/libaudiocomponentengine.so:system/lib64/libaudiocomponentengine.so \
  vendor/amazon/douglas/proprietary/lib64/libaudiocustparam.so:system/lib64/libaudiocustparam.so \
  vendor/amazon/douglas/proprietary/lib64/libaudiostream.so:system/lib64/libaudiostream.so \
+ vendor/amazon/douglas/proprietary/lib64/libaudio-resampler.so:system/lib64/libaudio-resampler.so \
+ vendor/amazon/douglas/proprietary/lib64/libaudiopolicymanager.so:system/lib64/libaudiopolicymanager.so \
+ vendor/amazon/douglas/proprietary/lib64/libaudiopolicymanagerdefault.so:system/lib64/libaudiopolicymanagerdefault.so \
+ vendor/amazon/douglas/proprietary/lib64/libaudiopolicyservice.so:system/lib64/libaudiopolicyservice.so \
+ vendor/amazon/douglas/proprietary/lib64/libaudiostream_jni.so:system/lib64/libaudiostream_jni.so \
+ vendor/amazon/douglas/proprietary/lib64/libaudioutils.so:system/lib64/libaudioutils.so \
  vendor/amazon/douglas/proprietary/lib64/libbessound_hd_mtk.so:system/lib64/libbessound_hd_mtk.so \
  vendor/amazon/douglas/proprietary/lib64/libblisrc32.so:system/lib64/libblisrc32.so \
  vendor/amazon/douglas/proprietary/lib64/libbluetooth_hw_test.so:system/lib64/libbluetooth_hw_test.so \
