@@ -1,1 +1,1 @@
-Vendor blobs for build cm12 for the Amazon Fire HD8 2017.
+Vendor blobs for the Amazon Fire HD8 2017 aka "douglas" for build Android 5.X based ROMs.
