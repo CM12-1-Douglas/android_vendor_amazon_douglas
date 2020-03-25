@@ -43,6 +43,8 @@ PRODUCT_COPY_FILES += \
  vendor/amazon/douglas/proprietary/etc/firmware/ROMv2_lm_patch_1_1_hdr.bin:system/etc/firmware/ROMv2_lm_patch_1_1_hdr.bin \
  vendor/amazon/douglas/proprietary/etc/firmware/gt9xx_fw.bin:system/etc/firmware/gt9xx_fw.bin \
  vendor/amazon/douglas/proprietary/etc/firmware/WIFI_RAM_CODE_8163:system/etc/firmware/WIFI_RAM_CODE_8163 \
+ vendor/amazon/douglas/proprietary/etc/firmware/md32_d.bin:system/etc/firmware/md32_d.bin \
+ vendor/amazon/douglas/proprietary/etc/firmware/md32_p.bin:system/etc/firmware/md32_p.bin \
  vendor/amazon/douglas/proprietary/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
  vendor/amazon/douglas/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
  vendor/amazon/douglas/proprietary/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
